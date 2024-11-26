@@ -35,11 +35,20 @@
     </property>
     <addaction name="action_Neu"/>
     <addaction name="action_Oeffnen"/>
+    <addaction name="separator"/>
     <addaction name="action_Speichern"/>
+    <addaction name="action_Speichern_unter"/>
     <addaction name="separator"/>
     <addaction name="action_Beenden"/>
    </widget>
+   <widget class="QMenu" name="menu_Hilfe">
+    <property name="title">
+     <string>&amp;Hilfe</string>
+    </property>
+    <addaction name="action_Info"/>
+   </widget>
    <addaction name="menu_Datei"/>
+   <addaction name="menu_Hilfe"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -55,6 +64,7 @@
    <addaction name="action_Neu"/>
    <addaction name="action_Oeffnen"/>
    <addaction name="action_Speichern"/>
+   <addaction name="action_Info"/>
   </widget>
   <action name="action_Beenden">
    <property name="text">
@@ -89,6 +99,20 @@
    </property>
    <property name="text">
     <string>Speichern</string>
+   </property>
+  </action>
+  <action name="action_Info">
+   <property name="icon">
+    <iconset resource="Bilder/icons.qrc">
+     <normaloff>:/Bilder/info.bmp</normaloff>:/Bilder/info.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Info</string>
+   </property>
+  </action>
+  <action name="action_Speichern_unter">
+   <property name="text">
+    <string>Speichern unter</string>
    </property>
   </action>
  </widget>
